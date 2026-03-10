@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="La Bella Vita – Italská restaurace v srdci Prahy. Autentická italská kuchyně, čerstvé ingredience a nezapomenutelné gastronomické zážitky." />
+  <title>La Bella Vita – Italská Restaurace Praha</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">La Bella Vita</span>
+          <span class="nav__logo-tagline">Ristorante Italiano</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html" class="nav__link nav__link--active">Domů</a></li>
+          <li><a href="menu.html" class="nav__link">Menu</a></li>
+          <li><a href="about.html" class="nav__link">O nás</a></li>
+          <li><a href="contact.html" class="nav__link nav__reserve">Rezervace</a></li>
+        </ul>
+
+        <button class="nav__hamburger" id="hamburger" aria-label="Otevřít navigaci">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile nav -->
+    <nav class="nav__mobile" id="mobileNav">
+      <ul class="nav__mobile-links">
+        <li><a href="index.html" class="nav__link--active">Domů</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">O nás</a></li>
+        <li><a href="contact.html">Rezervace</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__bg hero__bg--home css-img"></div>
+    <div class="hero__overlay"></div>
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__tag">✦ Benvenuti a La Bella Vita ✦</span>
+        <h1 class="hero__title">
+          Italská vášeň<br />na každém <span>talíři</span>
+        </h1>
+        <p class="hero__description">
+          Přeneste se do srdce Itálie bez jediného kroku na letiště.
+          Čerstvé ingredience, rodinné recepty a nezapomenutelné gastronomické zážitky
+          vás čekají každý den od 11:00 do 23:00.
+        </p>
+        <div class="hero__buttons">
+          <a href="menu.html" class="btn btn--primary">Prohlédnout menu</a>
+          <a href="contact.html" class="btn btn--outline">Rezervovat stůl</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WELCOME ===== -->
+  <section class="section welcome">
+    <div class="container">
+      <div class="welcome__grid">
+        <div class="welcome__image-wrap">
+          <div class="welcome__image css-img img--welcome" style="border-radius:20px;"></div>
+          <div class="welcome__badge">
+            <span class="welcome__badge-number">15+</span>
+            <span class="welcome__badge-text">let tradice</span>
+          </div>
+        </div>
+        <div class="welcome__text">
+          <span class="section__tag">Vítejte u nás</span>
+          <h2>Více než restaurace –<br />místo, kde žijete okamžik</h2>
+          <p>La Bella Vita otevřela své dveře v roce 2009 s jediným cílem – přinést do Prahy
+          autentické chutě Itálie. Šéfkuchař Marco Rossi přivezl rodinné recepty přímo
+          z toskánského venkova a každý den je připravuje z čerstvých, pečlivě vybraných surovin.</p>
+          <p>Naše restaurace se stala místem setkávání gurmánů, milovníků italské kultury
+          i rodin, které hledají příjemné prostředí a kvalitní stravu. Každý talíř je
+          malým uměleckým dílem.</p>
+
+          <div class="welcome__features">
+            <div class="welcome__feature">
+              <div class="welcome__feature-icon">🌿</div>
+              <span>Čerstvé, lokální a sezónní suroviny každý den</span>
+            </div>
+            <div class="welcome__feature">
+              <div class="welcome__feature-icon">🍷</div>
+              <span>Výběr více než 80 vín z italských vinic</span>
+            </div>
+            <div class="welcome__feature">
+              <div class="welcome__feature-icon">👨‍🍳</div>
+              <span>Certifikovaný italský šéfkuchař Marco Rossi</span>
+            </div>
+            <div class="welcome__feature">
+              <div class="welcome__feature-icon">🏆</div>
+              <span>Ocenění Nejlepší italská restaurace Prahy 2023</span>
+            </div>
+          </div>
+
+          <div style="margin-top:32px;">
+            <a href="about.html" class="btn btn--primary">Náš příběh</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stats__item">
+          <div class="stats__number">15+</div>
+          <div class="stats__label">Let zkušeností</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">80+</div>
+          <div class="stats__label">Italských vín</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">50+</div>
+          <div class="stats__label">Jídel v menu</div>
+        </div>
+        <div class="stats__item">
+          <div class="stats__number">4.9</div>
+          <div class="stats__label">Hodnocení zákazníků</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SPECIALTIES ===== -->
+  <section class="section specialties section--alt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Naše speciality</span>
+        <h2 class="section__title">Doporučená jídla šéfkuchaře</h2>
+        <p class="section__subtitle">Každý týden šéfkuchař Marco vybírá ta nejlepší sezonní jídla, která byste neměli minout.</p>
+        <div class="divider"></div>
+      </div>
+
+      <div class="dishes__grid">
+        <!-- Dish 1 -->
+        <article class="dish-card">
+          <div class="dish-card__image-wrap">
+            <div class="dish-card__image css-img img--bruschetta" style="height:100%;border-radius:0;"></div>
+            <span class="dish-card__badge">Bestseller</span>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__category">Předkrm</div>
+            <h3 class="dish-card__name">Bruschetta al Pomodoro</h3>
+            <p class="dish-card__description">
+              Opečený ciabatta chléb s čerstvými cherry rajčátky, česnekem,
+              bazalkou a extra panenským olivovým olejem z Toskánska.
+            </p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">195 Kč</span>
+              <span class="dish-card__tag">🌱 Vegan</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 2 -->
+        <article class="dish-card">
+          <div class="dish-card__image-wrap">
+            <div class="dish-card__image css-img img--pasta" style="height:100%;border-radius:0;"></div>
+            <span class="dish-card__badge">Specialita šéfkuchaře</span>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__category">Hlavní chod</div>
+            <h3 class="dish-card__name">Tagliatelle al Ragù</h3>
+            <p class="dish-card__description">
+              Čerstvé domácí těstoviny s pomalovanou hovězí ragù omáčkou,
+              parmezánem Parmigiano-Reggiano a čerstvou petrželí.
+            </p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">385 Kč</span>
+              <span class="dish-card__tag">⭐ Chef's Pick</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 3 -->
+        <article class="dish-card">
+          <div class="dish-card__image-wrap">
+            <div class="dish-card__image css-img img--steak" style="height:100%;border-radius:0;"></div>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__category">Hlavní chod</div>
+            <h3 class="dish-card__name">Bistecca alla Fiorentina</h3>
+            <p class="dish-card__description">
+              Tradiční florentský steak z mladého hovězího, pečený na dřevěném uhlí,
+              se salátem rucola a citrónovou zálivkou.
+            </p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">695 Kč</span>
+              <span class="dish-card__tag">🔥 Grill</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Dish 4 -->
+        <article class="dish-card">
+          <div class="dish-card__image-wrap">
+            <div class="dish-card__image css-img img--tiramisu" style="height:100%;border-radius:0;"></div>
+          </div>
+          <div class="dish-card__body">
+            <div class="dish-card__category">Dezert</div>
+            <h3 class="dish-card__name">Tiramisù della Casa</h3>
+            <p class="dish-card__description">
+              Klasický italský dezert s mascarpone, pravou italskou kávou espresso,
+              sušenkami savoiardi a horkou čokoládou.
+            </p>
+            <div class="dish-card__footer">
+              <span class="dish-card__price">225 Kč</span>
+              <span class="dish-card__tag">🍫 Oblíbený</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div style="text-align:center;margin-top:48px;">
+        <a href="menu.html" class="btn btn--primary">Celé menu →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOURS ===== -->
+  <section class="section hours">
+    <div class="container">
+      <div class="hours__grid">
+        <div>
+          <span class="section__tag">Navštivte nás</span>
+          <h2>Otevírací doba</h2>
+          <div class="divider" style="margin:16px 0 24px;"></div>
+          <p>Jsme tu pro vás každý den. Rezervaci doporučujeme zejména na víkendy
+          a sváteční dny, kdy jsou kapacity rychle obsazeny.</p>
+
+          <div class="hours__table">
+            <div class="hours__row">
+              <span class="hours__day">Pondělí – Čtvrtek</span>
+              <span class="hours__time">11:00 – 22:00</span>
+            </div>
+            <div class="hours__row">
+              <span class="hours__day">Pátek</span>
+              <span class="hours__time">11:00 – 23:30</span>
+            </div>
+            <div class="hours__row">
+              <span class="hours__day">Sobota</span>
+              <span class="hours__time">10:00 – 23:30</span>
+            </div>
+            <div class="hours__row">
+              <span class="hours__day">Neděle</span>
+              <span class="hours__time">10:00 – 22:00</span>
+            </div>
+          </div>
+
+          <div class="hours__cta">
+            <a href="contact.html" class="btn btn--primary">Rezervovat stůl</a>
+          </div>
+        </div>
+
+        <div>
+          <div class="hours__image css-img img--hours"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="section testimonials">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Recenze hostů</span>
+        <h2 class="section__title">Co říkají naši hosté</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">
+            Nejlepší tagliatelle, které jsem kdy jedl mimo Itálii. Atmosféra je úžasná,
+            personál velmi milý a přátelský. Určitě se vrátíme!
+          </p>
+          <div class="testimonial-card__author">
+            <div style="width:48px;height:48px;border-radius:50%;background:var(--color-secondary);display:flex;align-items:center;justify-content:center;font-size:1.3rem;">👨</div>
+            <div>
+              <div class="testimonial-card__name">Tomáš Novák</div>
+              <div class="testimonial-card__stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">
+            Slavili jsme výročí a La Bella Vita překonala veškerá naše očekávání.
+            Romantická atmosféra, výborné víno a tiramisù – prostě dokonalé!
+          </p>
+          <div class="testimonial-card__author">
+            <div style="width:48px;height:48px;border-radius:50%;background:var(--color-primary);display:flex;align-items:center;justify-content:center;font-size:1.3rem;">👩</div>
+            <div>
+              <div class="testimonial-card__name">Markéta Svobodová</div>
+              <div class="testimonial-card__stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <div class="testimonial-card__quote">"</div>
+          <p class="testimonial-card__text">
+            Jako pravý Ital mohu potvrdit – pasta je autentická a chutná přesně
+            jako doma. Marco opravdu ví, co dělá. Výborný výběr vín!
+          </p>
+          <div class="testimonial-card__author">
+            <div style="width:48px;height:48px;border-radius:50%;background:#4a6741;display:flex;align-items:center;justify-content:center;font-size:1.3rem;">👨</div>
+            <div>
+              <div class="testimonial-card__name">Luca Bianchi</div>
+              <div class="testimonial-card__stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">La Bella Vita</div>
+          <div class="footer__brand-tagline">Ristorante Italiano · Praha</div>
+          <p class="footer__brand-desc">
+            Autentická italská kuchyně v srdci Prahy. Přijďte ochutnat kus Itálie
+            a vytvořit nezapomenutelné vzpomínky u stolu s těmi, na kterých vám záleží.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="TripAdvisor">🧳</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigace</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Domů</a></li>
+            <li><a href="menu.html" class="footer__link">Menu</a></li>
+            <li><a href="about.html" class="footer__link">O nás</a></li>
+            <li><a href="contact.html" class="footer__link">Kontakt</a></li>
+            <li><a href="contact.html" class="footer__link">Rezervace</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Otevírací doba</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">Po–Čt: 11:00–22:00</span></li>
+            <li><span class="footer__link">Pátek: 11:00–23:30</span></li>
+            <li><span class="footer__link">Sobota: 10:00–23:30</span></li>
+            <li><span class="footer__link">Neděle: 10:00–22:00</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Kontakt</h4>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>Náměstí Míru 12, Praha 2, 120 00</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+420 234 567 890</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉️</span>
+            <span>info@labellavita.cz</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2024 La Bella Vita Ristorante. Všechna práva vyhrazena.</span>
+        <span>Vytvořeno s ❤️ v Praze</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Sticky header
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 50);
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.nav__mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+  </script>
+</body>
+</html>

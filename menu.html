@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Menu La Bella Vita – Autentická italská kuchyně. Předkrmy, polévky, těstoviny, rizota, maso, ryby, dezerty a nápoje." />
+  <title>Menu – La Bella Vita Ristorante</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header header--scrolled" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">La Bella Vita</span>
+          <span class="nav__logo-tagline">Ristorante Italiano</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html" class="nav__link">Domů</a></li>
+          <li><a href="menu.html" class="nav__link nav__link--active">Menu</a></li>
+          <li><a href="about.html" class="nav__link">O nás</a></li>
+          <li><a href="contact.html" class="nav__link nav__reserve">Rezervace</a></li>
+        </ul>
+
+        <button class="nav__hamburger" id="hamburger" aria-label="Otevřít navigaci">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <nav class="nav__mobile" id="mobileNav">
+      <ul class="nav__mobile-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="menu.html" class="nav__link--active">Menu</a></li>
+        <li><a href="about.html">O nás</a></li>
+        <li><a href="contact.html">Rezervace</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero__bg hero__bg--menu css-img"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <span class="page-hero__tag">✦ Naše nabídka ✦</span>
+        <h1 class="page-hero__title">Menu</h1>
+        <p class="page-hero__subtitle">
+          Každé jídlo připravujeme z čerstvých surovin, s láskou a italskou vášní.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MENU NAV ===== -->
+  <div class="menu-nav">
+    <div class="container">
+      <ul class="menu-nav__list">
+        <li><a href="#predkrmy" class="menu-nav__btn menu-nav__btn--active">Předkrmy</a></li>
+        <li><a href="#polevky" class="menu-nav__btn">Polévky</a></li>
+        <li><a href="#testoviny" class="menu-nav__btn">Těstoviny & Rizota</a></li>
+        <li><a href="#maso" class="menu-nav__btn">Maso & Ryby</a></li>
+        <li><a href="#dezerty" class="menu-nav__btn">Dezerty</a></li>
+        <li><a href="#napoje" class="menu-nav__btn">Nápoje & Vína</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===== PŘEDKRMY ===== -->
+  <section class="menu-section" id="predkrmy">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Antipasti</span>
+        <h2 class="section__title">Předkrmy</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__image css-img img--bruschetta" style="border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Bruschetta al Pomodoro</h4>
+              <span class="menu-item__price">195 Kč</span>
+            </div>
+            <p class="menu-item__description">Opečený ciabatta chléb s cherry rajčátky, česnekem a bazalkou</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Vegan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1610614819513-58e34989848b?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Antipasto Misto</h4>
+              <span class="menu-item__price">345 Kč</span>
+            </div>
+            <p class="menu-item__description">Výběr italských uzenin, sýrů Grana Padano a Taleggio, marinované olivy a sun-dried rajčata</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1574894709920-11b28e7367e3?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Carpaccio di Manzo</h4>
+              <span class="menu-item__price">295 Kč</span>
+            </div>
+            <p class="menu-item__description">Tenké plátky syrového hovězího svíčkové s rucola, parmezánem a citronovou zálivkou</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+              <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1565299585323-38d6b0865b47?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Caprese di Bufala</h4>
+              <span class="menu-item__price">245 Kč</span>
+            </div>
+            <p class="menu-item__description">Čerstvá mozzarella di bufala, rajčata heirloom, bazalka a extra panenský olivový olej z Toskánska</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1515443961218-a51367888e4b?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Calamari Fritti</h4>
+              <span class="menu-item__price">275 Kč</span>
+            </div>
+            <p class="menu-item__description">Smažené kroužky kalamárů v lehkém těstíčku, s citronem a tartarovou omáčkou</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--sp">Mořské plody</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1547592166-23ac45744acd?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Zuppa di Cozze</h4>
+              <span class="menu-item__price">325 Kč</span>
+            </div>
+            <p class="menu-item__description">Mušle na víně s cherry rajčátky, česnekem, petrželí a opečenou focaccia</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--sp">Mořské plody</span>
+              <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== POLÉVKY ===== -->
+  <section class="menu-section menu-section--alt" id="polevky">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Zuppe</span>
+        <h2 class="section__title">Polévky</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1547592180-85f173990554?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Minestrone della Nonna</h4>
+              <span class="menu-item__price">155 Kč</span>
+            </div>
+            <p class="menu-item__description">Tradiční babiččina zeleninová polévka s cannellini fazolemi, těstovinami a parmazánem</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1604152135912-04a022e23696?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Ribollita Toscana</h4>
+              <span class="menu-item__price">175 Kč</span>
+            </div>
+            <p class="menu-item__description">Hustá toskánská polévka s kapustou cavolo nero, bílými fazolemi a starým chlebem</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Vegan</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1569050467447-ce54b3bbc37d?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Crema di Funghi Porcini</h4>
+              <span class="menu-item__price">185 Kč</span>
+            </div>
+            <p class="menu-item__description">Sametová krémová polévka z hříbků s lanýžovým olejem a opečenými krutony</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+              <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1614977645540-7abd9dab0fc0?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Acquacotta</h4>
+              <span class="menu-item__price">165 Kč</span>
+            </div>
+            <p class="menu-item__description">Tradiční venkovská polévka z Maremmy se zeleninou, vejcem, toskánským chlebem a olivovým olejem</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TĚSTOVINY & RIZOTA ===== -->
+  <section class="menu-section" id="testoviny">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Primi Piatti</span>
+        <h2 class="section__title">Těstoviny &amp; Rizota</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__image css-img img--pasta" style="border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Tagliatelle al Ragù</h4>
+              <span class="menu-item__price">385 Kč</span>
+            </div>
+            <p class="menu-item__description">Čerstvé domácí těstoviny s pomalovanou hovězí ragù, parmezánem a petrželí</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1612874742237-6526221588e3?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Spaghetti alla Carbonara</h4>
+              <span class="menu-item__price">355 Kč</span>
+            </div>
+            <p class="menu-item__description">Klasická římská carbonara se spaghetti, guanciale, vejcem, pecorino romano a černým pepřem</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Klasika</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Pappardelle al Cinghiale</h4>
+              <span class="menu-item__price">425 Kč</span>
+            </div>
+            <p class="menu-item__description">Široké domácí těstoviny s ragù z divočáka, rozmarýnem, tymiánem a červeným vínem</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1563379926898-05f4575a45d8?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Risotto ai Funghi e Tartufo</h4>
+              <span class="menu-item__price">445 Kč</span>
+            </div>
+            <p class="menu-item__description">Creamy risotto Arborio se směsí lesních hub, lanýžovým olejem a parmezánem</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+              <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1551183053-bf91798d792b?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Linguine alle Vongole</h4>
+              <span class="menu-item__price">415 Kč</span>
+            </div>
+            <p class="menu-item__description">Linguine s čerstvými škeblemi, česnekem, bílým vínem, petrželí a chilli</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--sp">Mořské plody</span>
+              <span class="menu-item__tag menu-item__tag--sp">Pikantní</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1595295333158-4742f28fbd85?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Gnocchi al Gorgonzola</h4>
+              <span class="menu-item__price">365 Kč</span>
+            </div>
+            <p class="menu-item__description">Domácí bramborové gnocchi v krémové omáčce z gorgonzoly, vlašských ořechů a špenátu</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MASO & RYBY ===== -->
+  <section class="menu-section menu-section--alt" id="maso">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Secondi Piatti</span>
+        <h2 class="section__title">Maso &amp; Ryby</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__image css-img img--steak" style="border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Bistecca alla Fiorentina</h4>
+              <span class="menu-item__price">695 Kč</span>
+            </div>
+            <p class="menu-item__description">Tradiční florentský T-bone steak z čistokrevného hovězího, pečený na grilu (min. 500 g)</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+              <span class="menu-item__tag menu-item__tag--chef">Chef's Pick</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1604909052743-94e838986d24?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Osso Buco alla Milanese</h4>
+              <span class="menu-item__price">545 Kč</span>
+            </div>
+            <p class="menu-item__description">Dušená telecí kolena na víně s gremolata (citronová kůra, česnek, petržel) a saffron risottem</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--chef">Milánská specialita</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1467003909585-2f8a72700288?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Branzino al Cartoccio</h4>
+              <span class="menu-item__price">485 Kč</span>
+            </div>
+            <p class="menu-item__description">Divoký mořský vlk pečený ve folii s citronem, olivami, kaparami a cherry rajčátky</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+              <span class="menu-item__tag menu-item__tag--sp">Ryba</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1559847844-5315695dadae?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Pollo alla Cacciatora</h4>
+              <span class="menu-item__price">395 Kč</span>
+            </div>
+            <p class="menu-item__description">Kuřecí stehna dušená s rajčaty, olivami, kaparami, vínem a aromatickými bylinkami</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1532636875304-0c89119d9b4d?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Saltimbocca alla Romana</h4>
+              <span class="menu-item__price">455 Kč</span>
+            </div>
+            <p class="menu-item__description">Telecí plátky se šalvějí a parmskou šunkou prosciutto, na másle a bílém víně</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+              <span class="menu-item__tag menu-item__tag--chef">Řím. specialita</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Gamberoni alla Griglia</h4>
+              <span class="menu-item__price">525 Kč</span>
+            </div>
+            <p class="menu-item__description">Jumbo krevety grilované s česnekem, chilli, citronem a bylinkovým máslem, podávané s opečenou focaccia</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--sp">Mořské plody</span>
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEZERTY ===== -->
+  <section class="menu-section" id="dezerty">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Dolci</span>
+        <h2 class="section__title">Dezerty</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__image css-img img--tiramisu" style="border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Tiramisù della Casa</h4>
+              <span class="menu-item__price">225 Kč</span>
+            </div>
+            <p class="menu-item__description">Klasický italský dezert s mascarpone, espressem, savoiardi a hořkou čokoládou</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+              <span class="menu-item__tag">Oblíbený</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Panna Cotta ai Frutti di Bosco</h4>
+              <span class="menu-item__price">195 Kč</span>
+            </div>
+            <p class="menu-item__description">Tradiční vanilková panna cotta s coulis z lesního ovoce (maliny, borůvky, jahody)</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Cannoli Siciliani</h4>
+              <span class="menu-item__price">175 Kč</span>
+            </div>
+            <p class="menu-item__description">Křupavé trubičky plněné ricottovým krémem s kandovanou pomerančovou kůrou a pistáciemi</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+              <span class="menu-item__tag">Sicílie</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Gelato Artigianale</h4>
+              <span class="menu-item__price">145 Kč</span>
+            </div>
+            <p class="menu-item__description">Výběr 2 kopečků domácí zmrzliny: vanilka, čokoláda, pistácie, citronový sorbet, jahoda</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Veg</span>
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NÁPOJE & VÍNA ===== -->
+  <section class="menu-section menu-section--alt" id="napoje">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Bevande & Vini</span>
+        <h2 class="section__title">Nápoje &amp; Vína</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Barolo DOCG 2019</h4>
+              <span class="menu-item__price">195 Kč / skl.</span>
+            </div>
+            <p class="menu-item__description">Král italských vín z Piemontu. Plné tělo, třísloviny, aroma třešní, tabáku a koření. Ideální k masu.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--gf">Červené víno</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1506377247377-2a5b3b417ebb?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Pinot Grigio delle Venezie 2022</h4>
+              <span class="menu-item__price">155 Kč / skl.</span>
+            </div>
+            <p class="menu-item__description">Svěží bílé víno z Veneta. Ovocné aroma hrušky a broskve, středně suché, osvěžující kyselina. Perfektní k rybám.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Bílé víno</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Aperol Spritz</h4>
+              <span class="menu-item__price">175 Kč</span>
+            </div>
+            <p class="menu-item__description">Klasický italský aperitiv – Aperol, Prosecco a perlivá voda s plátkem pomeranče</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Aperitiv</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Espresso Italiano</h4>
+              <span class="menu-item__price">65 Kč</span>
+            </div>
+            <p class="menu-item__description">Pravé italské espresso ze směsi Arabica a Robusta pražené v malé pražírně v Miláně</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag menu-item__tag--v">Vegan</span>
+              <span class="menu-item__tag menu-item__tag--gf">Bez lepku</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1481671703460-040cb8a2d909?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Prosecco DOC Treviso</h4>
+              <span class="menu-item__price">145 Kč / skl.</span>
+            </div>
+            <p class="menu-item__description">Elegantní italské šumivé víno z oblasti Treviso. Aroma jablíček, hrušky a bílých květů. Brut.</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Šumivé</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="menu-item__image css-img" style="background-image:url('https://images.unsplash.com/photo-1534353473418-4cfa6c56fd38?w=400&auto=format&fit=crop');border-radius:6px;"></div>
+          <div class="menu-item__body">
+            <div class="menu-item__header">
+              <h4 class="menu-item__name">Limoncello della Casa</h4>
+              <span class="menu-item__price">95 Kč</span>
+            </div>
+            <p class="menu-item__description">Domácí citronový likér ze Sicílie připravovaný z citronové kůry a prémiového alkoholu</p>
+            <div class="menu-item__tags">
+              <span class="menu-item__tag">Digestiv</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALLERGEN NOTE ===== -->
+  <section style="padding:40px 0;background:var(--color-white);">
+    <div class="container">
+      <div style="background:var(--color-gray-light);border-radius:var(--radius-md);padding:28px 32px;border-left:4px solid var(--color-secondary);">
+        <h4 style="font-family:var(--font-heading);margin-bottom:8px;">Alergeny a dietní preference</h4>
+        <p style="font-size:0.9rem;color:var(--color-gray);margin:0;">
+          Pokud máte alergii nebo nesnášenlivost na určité potraviny, prosím informujte nás před objednávkou.
+          Naši kuchaři se vždy snaží vyhovět individuálním požadavkům.
+          <strong>V</strong> = vegetariánské, <strong>Vegan</strong> = veganské, <strong>GF</strong> = bez lepku, <strong>Chef's Pick</strong> = doporučení šéfkuchaře.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">La Bella Vita</div>
+          <div class="footer__brand-tagline">Ristorante Italiano · Praha</div>
+          <p class="footer__brand-desc">
+            Autentická italská kuchyně v srdci Prahy. Přijďte ochutnat kus Itálie
+            a vytvořit nezapomenutelné vzpomínky u stolu.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="TripAdvisor">🧳</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigace</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Domů</a></li>
+            <li><a href="menu.html" class="footer__link">Menu</a></li>
+            <li><a href="about.html" class="footer__link">O nás</a></li>
+            <li><a href="contact.html" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Otevírací doba</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">Po–Čt: 11:00–22:00</span></li>
+            <li><span class="footer__link">Pátek: 11:00–23:30</span></li>
+            <li><span class="footer__link">Sobota: 10:00–23:30</span></li>
+            <li><span class="footer__link">Neděle: 10:00–22:00</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Kontakt</h4>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>Náměstí Míru 12, Praha 2</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+420 234 567 890</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉️</span>
+            <span>info@labellavita.cz</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2024 La Bella Vita Ristorante. Všechna práva vyhrazena.</span>
+        <span>Vytvořeno s ❤️ v Praze</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 50);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav__mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+
+    // Smooth scroll for menu nav links
+    document.querySelectorAll('.menu-nav__btn').forEach(btn => {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelectorAll('.menu-nav__btn').forEach(b => b.classList.remove('menu-nav__btn--active'));
+        this.classList.add('menu-nav__btn--active');
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          const offset = 76 + 72;
+          window.scrollTo({ top: target.offsetTop - offset, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

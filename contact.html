@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Kontakt a rezervace – La Bella Vita. Rezervujte si stůl, napište nám nebo nás navštivte na Náměstí Míru 12, Praha 2." />
+  <title>Kontakt & Rezervace – La Bella Vita Ristorante</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header header--scrolled" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav__logo">
+          <span class="nav__logo-name">La Bella Vita</span>
+          <span class="nav__logo-tagline">Ristorante Italiano</span>
+        </a>
+
+        <ul class="nav__links">
+          <li><a href="index.html" class="nav__link">Domů</a></li>
+          <li><a href="menu.html" class="nav__link">Menu</a></li>
+          <li><a href="about.html" class="nav__link">O nás</a></li>
+          <li><a href="contact.html" class="nav__link nav__link--active nav__reserve">Rezervace</a></li>
+        </ul>
+
+        <button class="nav__hamburger" id="hamburger" aria-label="Otevřít navigaci">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+    <nav class="nav__mobile" id="mobileNav">
+      <ul class="nav__mobile-links">
+        <li><a href="index.html">Domů</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">O nás</a></li>
+        <li><a href="contact.html" class="nav__link--active">Rezervace</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="page-hero__bg hero__bg--contact css-img"></div>
+    <div class="page-hero__overlay"></div>
+    <div class="container">
+      <div class="page-hero__content">
+        <span class="page-hero__tag">✦ Těšíme se na vás ✦</span>
+        <h1 class="page-hero__title">Kontakt &amp; Rezervace</h1>
+        <p class="page-hero__subtitle">
+          Rezervujte si stůl, napište nám nebo nás prostě přijďte navštívit.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MAIN CONTACT SECTION ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="contact__grid">
+
+        <!-- Reservation Form -->
+        <div class="contact__form-wrap">
+          <h2 class="form__title">Rezervace stolu</h2>
+          <p class="form__subtitle">
+            Vyplňte formulář a my vás kontaktujeme s potvrzením do 2 hodin.
+            Preferujete telefonát? Zavolejte na <strong>+420 234 567 890</strong>.
+          </p>
+
+          <form id="reservationForm" novalidate>
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="firstName">Jméno *</label>
+                <input class="form__input" type="text" id="firstName" name="firstName" placeholder="Jan" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="lastName">Příjmení *</label>
+                <input class="form__input" type="text" id="lastName" name="lastName" placeholder="Novák" required />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="email">E-mail *</label>
+                <input class="form__input" type="email" id="email" name="email" placeholder="jan@example.com" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="phone">Telefon *</label>
+                <input class="form__input" type="tel" id="phone" name="phone" placeholder="+420 XXX XXX XXX" required />
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="date">Datum *</label>
+                <input class="form__input" type="date" id="date" name="date" required />
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="time">Čas *</label>
+                <select class="form__select" id="time" name="time" required>
+                  <option value="">Vyberte čas</option>
+                  <option value="11:00">11:00</option>
+                  <option value="11:30">11:30</option>
+                  <option value="12:00">12:00</option>
+                  <option value="12:30">12:30</option>
+                  <option value="13:00">13:00</option>
+                  <option value="13:30">13:30</option>
+                  <option value="14:00">14:00</option>
+                  <option value="18:00">18:00</option>
+                  <option value="18:30">18:30</option>
+                  <option value="19:00">19:00</option>
+                  <option value="19:30">19:30</option>
+                  <option value="20:00">20:00</option>
+                  <option value="20:30">20:30</option>
+                  <option value="21:00">21:00</option>
+                  <option value="21:30">21:30</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="form__group">
+                <label class="form__label" for="guests">Počet hostů *</label>
+                <select class="form__select" id="guests" name="guests" required>
+                  <option value="">Počet osob</option>
+                  <option value="1">1 osoba</option>
+                  <option value="2">2 osoby</option>
+                  <option value="3">3 osoby</option>
+                  <option value="4">4 osoby</option>
+                  <option value="5">5 osob</option>
+                  <option value="6">6 osob</option>
+                  <option value="7-10">7–10 osob</option>
+                  <option value="11+">Více než 10 (firemní akce)</option>
+                </select>
+              </div>
+              <div class="form__group">
+                <label class="form__label" for="occasion">Příležitost</label>
+                <select class="form__select" id="occasion" name="occasion">
+                  <option value="">Žádná zvláštní</option>
+                  <option value="birthday">Narozeniny</option>
+                  <option value="anniversary">Výročí</option>
+                  <option value="date">Romantická večeře</option>
+                  <option value="business">Pracovní oběd/večeře</option>
+                  <option value="family">Rodinná oslava</option>
+                  <option value="other">Jiná příležitost</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="allergies">Alergie &amp; dietní požadavky</label>
+              <input class="form__input" type="text" id="allergies" name="allergies" placeholder="Např. bezlepková dieta, vegetarián, alergie na ořechy..." />
+            </div>
+
+            <div class="form__group">
+              <label class="form__label" for="message">Poznámka</label>
+              <textarea class="form__textarea" id="message" name="message" placeholder="Máte speciální přání? Rádi se postaráme o každý detail vaší návštěvy..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary form__submit">
+              Odeslat rezervaci
+            </button>
+          </form>
+
+          <!-- Success message (hidden by default) -->
+          <div id="formSuccess" style="display:none;margin-top:24px;padding:20px 24px;background:#e8f5e9;border-radius:var(--radius-md);border-left:4px solid #4caf50;">
+            <h4 style="color:#2e7d32;margin-bottom:6px;">✅ Rezervace odeslána!</h4>
+            <p style="color:#388e3c;font-size:0.92rem;margin:0;">Děkujeme! Potvrdíme vaši rezervaci e-mailem nebo telefonicky do 2 hodin.</p>
+          </div>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact__info">
+
+          <div class="contact__info-block">
+            <h3 class="contact__info-title">
+              <span>📍</span> Adresa
+            </h3>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">🏠</span>
+              <span>Náměstí Míru 12<br />Praha 2, 120 00<br />Česká republika</span>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">🚇</span>
+              <span>Metro A – stanice Náměstí Míru (2 min. pěšky)</span>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">🚌</span>
+              <span>Tramvaj č. 4, 10, 16 – zastávka Náměstí Míru</span>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">🚗</span>
+              <span>Parkoviště P+R – Vinohrady, 5 min. chůzí</span>
+            </div>
+          </div>
+
+          <div class="contact__info-block">
+            <h3 class="contact__info-title">
+              <span>📞</span> Kontaktní údaje
+            </h3>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">📞</span>
+              <a href="tel:+420234567890" style="color:var(--color-primary);font-weight:600;">+420 234 567 890</a>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">✉️</span>
+              <a href="mailto:info@labellavita.cz" style="color:var(--color-primary);">info@labellavita.cz</a>
+            </div>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">📱</span>
+              <span>WhatsApp: +420 234 567 890</span>
+            </div>
+          </div>
+
+          <div class="contact__info-block">
+            <h3 class="contact__info-title">
+              <span>🕐</span> Otevírací doba
+            </h3>
+            <div class="contact__info-item">
+              <span class="contact__info-icon">📅</span>
+              <div>
+                <div style="margin-bottom:4px;">Po – Čt: <strong>11:00 – 22:00</strong></div>
+                <div style="margin-bottom:4px;">Pátek: <strong>11:00 – 23:30</strong></div>
+                <div style="margin-bottom:4px;">Sobota: <strong>10:00 – 23:30</strong></div>
+                <div>Neděle: <strong>10:00 – 22:00</strong></div>
+              </div>
+            </div>
+            <div class="contact__info-item" style="margin-top:8px;">
+              <span class="contact__info-icon">ℹ️</span>
+              <span style="font-size:0.85rem;color:var(--color-gray);">Kuchyně se zavírá 30 minut před koncem otevírací doby</span>
+            </div>
+          </div>
+
+          <div class="contact__map">
+            <div class="contact__map-inner">
+              <span class="contact__map-icon">🗺️</span>
+              <strong>Náměstí Míru 12, Praha 2</strong>
+              <span style="font-size:0.8rem;">Metro A – Náměstí Míru</span>
+              <a href="https://maps.google.com/?q=Náměstí+Míru+12,+Praha+2" target="_blank" rel="noopener" class="btn btn--primary" style="margin-top:8px;font-size:0.8rem;padding:8px 18px;">
+                Otevřít v Google Maps
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRIVATE EVENTS ===== -->
+  <section class="section section--alt">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Zvláštní příležitosti</span>
+        <h2 class="section__title">Privátní akce &amp; Events</h2>
+        <p class="section__subtitle">Váš výjimečný okamžik si zaslouží výjimečné prostředí.</p>
+        <div class="divider"></div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:28px;">
+
+        <div class="value-card">
+          <span class="value-card__icon">🎂</span>
+          <h3 class="value-card__title">Narozeninové oslavy</h3>
+          <p class="value-card__text">
+            Připravíme speciální menu, narozeninový dort od naší cukrářky Lucie
+            a ozdobíme stůl podle vašich přání. Kapacita až 30 hostů v soukromém sále.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-card__icon">💍</span>
+          <h3 class="value-card__title">Romantické večeře</h3>
+          <p class="value-card__text">
+            Zásnuby, výročí nebo prostě výjimečný večer? Zajistíme svíčky, květiny,
+            šampaňské a speciální degustační menu pro dva.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-card__icon">💼</span>
+          <h3 class="value-card__title">Firemní akce</h3>
+          <p class="value-card__text">
+            Pracovní obědy, teambuildingy, vánoční večírky. Nabízíme skupinové menu,
+            sommelier service a privátní sál s projekčním zařízením.
+          </p>
+        </div>
+
+        <div class="value-card">
+          <span class="value-card__icon">👨‍🍳</span>
+          <h3 class="value-card__title">Kuchařské kurzy</h3>
+          <p class="value-card__text">
+            Naučte se tajemství italské kuchyně přímo od šéfkuchaře Marca. Kurzy
+            probíhají každou sobotu dopoledne pro skupiny 6–12 lidí.
+          </p>
+        </div>
+
+      </div>
+
+      <div style="text-align:center;margin-top:40px;">
+        <p style="color:var(--color-gray);margin-bottom:20px;">
+          Pro poptávku privátní akce nás kontaktujte na <strong>events@labellavita.cz</strong>
+          nebo telefonicky na <strong>+420 234 567 891</strong>.
+        </p>
+        <a href="mailto:events@labellavita.cz" class="btn btn--primary">Poptávka akce</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section__header">
+        <span class="section__tag">Časté dotazy</span>
+        <h2 class="section__title">FAQ</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div style="max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:16px;">
+
+        <details style="background:var(--color-white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-sm);border:1px solid var(--color-gray-light);">
+          <summary style="font-family:var(--font-heading);font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Je nutná rezervace?
+            <span style="font-size:1.2rem;color:var(--color-secondary);">+</span>
+          </summary>
+          <p style="margin-top:14px;font-size:0.92rem;color:var(--color-gray);">
+            Rezervaci doporučujeme, ale nevyžadujeme. O víkendech a svátcích jsou stoly obsazeny rychle,
+            proto doporučujeme rezervovat alespoň 2–3 dny předem. Na pracovní dny obvykle místo naleznete i bez rezervace.
+          </p>
+        </details>
+
+        <details style="background:var(--color-white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-sm);border:1px solid var(--color-gray-light);">
+          <summary style="font-family:var(--font-heading);font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Nabízíte vegetariánské a veganské možnosti?
+            <span style="font-size:1.2rem;color:var(--color-secondary);">+</span>
+          </summary>
+          <p style="margin-top:14px;font-size:0.92rem;color:var(--color-gray);">
+            Ano! Naše menu obsahuje řadu vegetariánských a veganských jídel označených příslušnými ikonami.
+            Pokud máte specifické požadavky, informujte nás při rezervaci a kuchař připraví speciální menu.
+          </p>
+        </details>
+
+        <details style="background:var(--color-white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-sm);border:1px solid var(--color-gray-light);">
+          <summary style="font-family:var(--font-heading);font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Jsou vítány děti?
+            <span style="font-size:1.2rem;color:var(--color-secondary);">+</span>
+          </summary>
+          <p style="margin-top:14px;font-size:0.92rem;color:var(--color-gray);">
+            Samozřejmě! Jsme rodinná restaurace a děti jsou vždy vítány. Máme dětské menu,
+            jídelní židličky a drobné aktivity, aby se děti dobře bavily. Prostě jako v italské rodině!
+          </p>
+        </details>
+
+        <details style="background:var(--color-white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-sm);border:1px solid var(--color-gray-light);">
+          <summary style="font-family:var(--font-heading);font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Přijímáte platební karty?
+            <span style="font-size:1.2rem;color:var(--color-secondary);">+</span>
+          </summary>
+          <p style="margin-top:14px;font-size:0.92rem;color:var(--color-gray);">
+            Ano, přijímáme všechny hlavní platební karty (Visa, Mastercard, American Express)
+            a také Apple Pay a Google Pay. Samozřejmě přijímáme i hotovost.
+          </p>
+        </details>
+
+        <details style="background:var(--color-white);border-radius:var(--radius-md);padding:20px 24px;box-shadow:var(--shadow-sm);border:1px solid var(--color-gray-light);">
+          <summary style="font-family:var(--font-heading);font-size:1.05rem;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;">
+            Nabízíte donáškové služby?
+            <span style="font-size:1.2rem;color:var(--color-secondary);">+</span>
+          </summary>
+          <p style="margin-top:14px;font-size:0.92rem;color:var(--color-gray);">
+            Ano! Nabízíme donáškové služby přes naše vlastní doručení (Praha 1, 2, 3)
+            nebo přes aplikace Bolt Food a Wolt. Minimální objednávka je 350 Kč.
+          </p>
+        </details>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <div class="footer__brand-name">La Bella Vita</div>
+          <div class="footer__brand-tagline">Ristorante Italiano · Praha</div>
+          <p class="footer__brand-desc">
+            Autentická italská kuchyně v srdci Prahy.
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">📘</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="TripAdvisor">🧳</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Navigace</h4>
+          <ul class="footer__links">
+            <li><a href="index.html" class="footer__link">Domů</a></li>
+            <li><a href="menu.html" class="footer__link">Menu</a></li>
+            <li><a href="about.html" class="footer__link">O nás</a></li>
+            <li><a href="contact.html" class="footer__link">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Otevírací doba</h4>
+          <ul class="footer__links">
+            <li><span class="footer__link">Po–Čt: 11:00–22:00</span></li>
+            <li><span class="footer__link">Pátek: 11:00–23:30</span></li>
+            <li><span class="footer__link">Sobota: 10:00–23:30</span></li>
+            <li><span class="footer__link">Neděle: 10:00–22:00</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer__col-title">Kontakt</h4>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📍</span>
+            <span>Náměstí Míru 12, Praha 2</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">📞</span>
+            <span>+420 234 567 890</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="footer__contact-icon">✉️</span>
+            <span>info@labellavita.cz</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>© 2024 La Bella Vita Ristorante. Všechna práva vyhrazena.</span>
+        <span>Vytvořeno s ❤️ v Praze</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('header--scrolled', window.scrollY > 50);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('open');
+      mobileNav.classList.toggle('open');
+    });
+
+    document.querySelectorAll('.nav__mobile-links a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('open');
+        mobileNav.classList.remove('open');
+      });
+    });
+
+    // Set minimum date to today
+    const dateInput = document.getElementById('date');
+    const today = new Date().toISOString().split('T')[0];
+    dateInput.setAttribute('min', today);
+
+    // Form submission handler (demo)
+    document.getElementById('reservationForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const requiredFields = this.querySelectorAll('[required]');
+      let valid = true;
+
+      requiredFields.forEach(field => {
+        if (!field.value.trim()) {
+          valid = false;
+          field.style.borderColor = 'var(--color-primary)';
+        } else {
+          field.style.borderColor = '';
+        }
+      });
+
+      if (valid) {
+        this.style.display = 'none';
+        document.getElementById('formSuccess').style.display = 'block';
+        window.scrollTo({ top: document.getElementById('formSuccess').offsetTop - 100, behavior: 'smooth' });
+      }
+    });
+
+    // FAQ accordion enhancement
+    document.querySelectorAll('details').forEach(detail => {
+      detail.addEventListener('toggle', function() {
+        const icon = this.querySelector('summary span:last-child');
+        if (icon) icon.textContent = this.open ? '−' : '+';
+      });
+    });
+  </script>
+</body>
+</html>
